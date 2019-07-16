@@ -1,1 +1,4 @@
-print(123455)
+from bidict import *
+
+print(a)
+print(a_inv)

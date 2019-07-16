@@ -67,6 +67,7 @@ def alert2(x,e=1,a=-1,tg=1):
 	global flag;flag=1;
 	print(x)
 	if x=='Bonus':
+		a=-1
 		for i in range(2):
 			try:
 				captcha();start(ci,0);k=0;return
@@ -107,6 +108,7 @@ def captcha():
 	ack()
 	sleep(2)
 	bes("$('#result')[0].style.backgroundColor='#000'")
+	return
 	for i in range(3):
 		if bes('var elem = document.querySelector("#result img"); return elem && elem.complete && typeof elem.naturalWidth != "undefined" && elem.naturalWidth > 0'):break
 		print('Loading')
@@ -374,9 +376,9 @@ def start2():
 lolo={
 'fb_follow'		:'https://www.like4like.org/user/earn-facebook-subscribes.php',	
 'fb_like'		:'https://www.like4like.org/free-facebook-likes.php'	,
-'tw_follow'		:'https://www.like4like.org/free-twitter-followers.php',
-# 'yt_sub'		:'https://www.like4like.org/user/earn-youtube-subscribe.php',
-# 'yt_like'		:'https://www.like4like.org/user/earn-youtube.php',
+# 'tw_follow'		:'https://www.like4like.org/free-twitter-followers.php',
+'yt_sub'		:'https://www.like4like.org/user/earn-youtube-subscribe.php',
+'yt_like'		:'https://www.like4like.org/user/earn-youtube.php',
 # 'ins_follow'	:'https://www.like4like.org/free-instagram-followers-likes-and-comments-exchange.php',
 # 'gp_shr'		:'https://www.like4like.org/user/earn-google.php',
 # 'site'		:'http://www.like4like.org/user/earn-sites.php',
